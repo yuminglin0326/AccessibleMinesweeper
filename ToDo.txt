@@ -1,0 +1,11 @@
+- [ ] down to jump out of levels
+- [x] remind cells on edge
+- [x] add instruction text
+- [x] when game finished, mark all mine cells revealed and mine cells
+- [x] change unknown neighbor text (0 unknown at)
+- [x] only speak cell value when reach/click on the cell
+- [x] press shift to hear more details
+- [x] press shift again to hear location of the cell
+- [x] report how many mines left after flag or unflag
+- [x] when game ends, if any cell is wrongly flagged, put it with X flag image and label as wrong flag
+- [x] right edge doesn't speak top unknown

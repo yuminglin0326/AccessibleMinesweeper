@@ -1,0 +1,47 @@
+<html lang="en">
+    <head>
+        <title>Minesweeper</title>
+
+        <link rel="stylesheet" type="text/css" href="minesweeper.css">
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="data:,">
+
+        <!-- jquery -->
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>  
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+
+        <script src="minesweeper.js"></script>
+    </head>
+    <body>
+        <div id="minesweeper-container">
+            <div id="header">
+                <h1 tabindex="0">Minesweeper Game</h1>
+                <h3 tabindex="0">Instructions</h3>
+                <ul id="instruction-list">
+                    <li tabindex="0">press tab to navigate to the next element on the screen</li>
+                    <li tabindex="0">press shift + tab to move back to the previous element</li>
+                    <li tabindex="0">press space bar to click</li>
+                    <li tabindex="0">on the game board, use arrow keys to move between cells</li>
+                    <li tabindex="0">click on a cell to hear its value</li>
+                    <li tabindex="0">press shift to hear numbers of unknown cells and flagged cells around a cell</li>
+                    <li tabindex="0">press enter to flagged a cell</li>
+                </ul>
+                <div id="level">
+                    <button id="easy-button">Easy 6x6</button>
+                    <button id="medium-button">Medium 9x9</button>
+                    <button id="hard-button">Hard 16x16</button>
+                </div>
+                <div id="mines" class="hidden" tabindex="0">Mines left: 0</div>
+            </div>
+            <div class="white">left board, press tab to enter the board</div>
+            <div id="board"></div>
+            <div id="game-result"></div>
+        </div>    
+</html>
