@@ -2,7 +2,6 @@ let boardRow = 0;
 let boardCol = 0;
 let mineCount = 0;
 let shiftMode = 0; // 0: number of unknown cells and flagged cells, 1: location
-const synth = window.speechSynthesis;
 $(document).ready(function() {
     
     $("#easy-button").click(function() {
@@ -37,7 +36,7 @@ $(document).ready(function() {
 
         let utterance = new SpeechSynthesisUtterance();
         utterance.text = elementText;
-        synth.speak(utterance);
+        speechSynthesis.speak(utterance);
     }
 
     // Function to get the text content of the focused element
@@ -392,7 +391,7 @@ $(document).ready(function() {
         }
     }
 
-    //
+    // reveal the cell
     function reveal(row, col, boardRow, boardCol) {
         let cell = $('.cell[row="' + row + '"][col="' + col + '"]');
         if (row < 1 || row > boardRow || col < 1 || col > boardCol || cell.hasClass("revealed") || cell.hasClass("flagged")) {
